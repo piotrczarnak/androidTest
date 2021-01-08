@@ -67,7 +67,6 @@ class PostRepo @Inject constructor(
         val request = Request.Builder()
             .url(source.url)
             .build()
-        return DataStatus.Failed()
 
         return try {
             val response = okHttpClient.newCall(request).execute()
