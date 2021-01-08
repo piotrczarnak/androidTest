@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DroidFed</string>
+    <string name="app_name">DroidFeed</string>
     <string name="app_version">v%1$s</string>
     <string name="error_invalid_article_url">Article URL is invalid</string>
     <string name="error_empty_email">Please put your email address</string>
@@ -9,10 +9,10 @@
     <string name="error_cannot_obtain_sources">Can not obtain the news sources. Please try again later.</string>
     <string name="error_add_source">Failed to add. Make sure the feed format is valid.</string>
     <string name="error_invalid_url">The url is not valid.</string>
-    <string name="nav_home">Homes</string>
+    <string name="nav_home">Home</string>
     <string name="nav_feed">Feed</string>
     <string name="nav_bookmarks">Bookmarks</string>
-    <string name="nav_title_about">Aboout</string>
+    <string name="nav_title_about">Abut</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_title_contribute">Contribute</string>
     <string name="nav_title_newsletter">Newsletter</string>
@@ -54,7 +54,7 @@
     <string name="empty_screen_bookmark">You haven\'t bookmarked anything yet.</string>
     <string name="empty_source_title">Uh oh! There’s no post\nbecause no source is selected.</string>
     <string name="empty_source_content">Click on the filter icon at the top right\ncorner to select sources.</string>
-    <string name="empty_bookmark_title">Hi! Your bookmarked posts\nwill sho here.</string>
+    <string name="empty_bookmark_title">Hi! Your bookmarked posts\nwill showedb here.</string>
     <string name="dialog_rate_app">Thanks! Would you like to review us on Google Play?</string>
     <string name="like_to_review_df">Would you like to review DroidFeed on Google Play?</string>
     <string name="your_email">Your e-mail</string>

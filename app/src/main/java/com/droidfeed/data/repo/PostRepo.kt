@@ -69,21 +69,21 @@ class PostRepo @Inject constructor(
             .build()
         return DataStatus.Failed()
 
-//        return try {
-//            val response = okHttpClient.newCall(request).execute()
-//
-//            if (response.isSuccessful) {
-//                    val posts = response.body?.string()?.let {
-//                        xmlParser.parse(it, source)
-//                }
-//
-//                DataStatus.Successful(posts)
-//            } else {
-//                DataStatus.HttpFailed(response.code)
-//            }
-//        } catch (e: IOException) {
-//            logThrowable(e)
-//            DataStatus.Failed(e)
-//        }
+        return try {
+            val response = okHttpClient.newCall(request).execute()
+
+            if (response.isSuccessful) {
+                    val posts = response.body?.string()?.let {
+                        xmlParser.parse(it, source)
+                }
+
+                DataStatus.Successful(posts)
+            } else {
+                DataStatus.HttpFailed(response.code)
+            }
+        } catch (e: IOException) {
+            logThrowable(e)
+            DataStatus.Failed(e)
+        }
     }
 }
