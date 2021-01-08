@@ -147,11 +147,11 @@ class MainActivity : BaseActivity() {
                 onMenuItemSelected(colorPalette.transparent)
                 lightStatusBarTheme()
             }
-            Destination.CONTRIBUTE -> {
-                highlightSelectedMenuItem(binding.appbar.menu.btnNavContribute)
-                onMenuItemSelected(colorPalette.gray)
-                darkStatusBarTheme()
-            }
+//            Destination.CONTRIBUTE -> {
+//                highlightSelectedMenuItem(binding.appbar.menu.btnNavContribute)
+//                onMenuItemSelected(colorPalette.gray)
+//                darkStatusBarTheme()
+//            }
             Destination.ABOUT -> {
                 highlightSelectedMenuItem(binding.appbar.menu.btnNavAbout)
                 onMenuItemSelected(colorPalette.pink)

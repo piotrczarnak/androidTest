@@ -7,6 +7,6 @@
 
     <path
         android:name="iconPath"
-        android:fillColor="#007"
+        android:fillColor="#889"
         android:pathData="@string/hamburger_menu_path" />
 </vector>

@@ -52,7 +52,7 @@ class AboutFragment : BaseFragment() {
         subscribeOpenUrlEvent()
         subscribeOpenLicenseEvent()
 
-        initAnimations()
+//        initAnimations()
 
         return binding.root
     }
@@ -60,7 +60,7 @@ class AboutFragment : BaseFragment() {
     private fun subscribeOpenLicenseEvent() {
         aboutViewModel.openLicenses.observeEvent(viewLifecycleOwner) {
             Intent(context, LicensesActivity::class.java)
-                .also(::startActivity)
+                    .also(::startActivity)
         }
     }
 

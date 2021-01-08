@@ -10,6 +10,7 @@ import kotlinx.coroutines.*
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import java.io.IOException
+import java.net.URL
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -66,22 +67,23 @@ class PostRepo @Inject constructor(
         val request = Request.Builder()
             .url(source.url)
             .build()
+        return DataStatus.Failed()
 
-        return try {
-            val response = okHttpClient.newCall(request).execute()
-
-            if (response.isSuccessful) {
-                val posts = response.body?.string()?.let {
-                    xmlParser.parse(it, source)
-                }
-
-                DataStatus.Successful(posts)
-            } else {
-                DataStatus.HttpFailed(response.code)
-            }
-        } catch (e: IOException) {
-            logThrowable(e)
-            DataStatus.Failed(e)
-        }
+//        return try {
+//            val response = okHttpClient.newCall(request).execute()
+//
+//            if (response.isSuccessful) {
+//                    val posts = response.body?.string()?.let {
+//                        xmlParser.parse(it, source)
+//                }
+//
+//                DataStatus.Successful(posts)
+//            } else {
+//                DataStatus.HttpFailed(response.code)
+//            }
+//        } catch (e: IOException) {
+//            logThrowable(e)
+//            DataStatus.Failed(e)
+//        }
     }
 }

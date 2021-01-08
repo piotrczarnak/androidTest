@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimary">#2D7FDF</color>
     <color name="colorPrimaryDark">#FFFFFF</color>
     <color name="colorAccent">#F5A623</color>
     <color name="colorAccentDark">#EC8A28</color>
     <color name="colorAccentLight">#F1B363</color>
-    <color name="appBackground">#2D7FDF</color>
+    <color name="appBackground">#FFFFFF</color>
     <color name="statusBarColor">#FFFFFF</color>
 
     <color name="secondaryTextColor">#70000000</color>
