@@ -42,6 +42,18 @@
             app:layout_constraintTop_toBottomOf="@+id/btnNavHome" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNavConferences2"
+            style="@style/DF.Button.Menu.Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="@{(v)->viewModel.onConferencesNavSelected()}"
+            android:text="@string/nav_title_conferences"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnNavHome"
+            />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnNavContribute"
             style="@style/DF.Button.Menu.Text"
             android:layout_width="0dp"
